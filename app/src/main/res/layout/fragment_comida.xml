@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorText">
+
+        <!-- Fragmento de comida para pedir en la facultad -->
+
+        <TextView
+            android:id="@+id/foodTxtvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/strFoodTitulo"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="40sp"
+            />
+
+        <TextView
+            android:id="@+id/foodTxtvSubtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strFoodSubtitulo"
+            android:gravity="center"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:id="@+id/foodBtnDesayuno"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/strFoodDesayuno"
+            android:textColor="@color/colorText"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/foodBtnComida"
+            android:layout_height="100dp"
+            android:background="@color/cardview_light_background"
+            android:textAllCaps="false"
+            android:text="@string/strFoodComida"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/foodBtnDulces"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorText"
+            android:textAllCaps="false"
+            android:text="@string/strFoodDulces"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/foodBtnPostres"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/cardview_light_background"
+            android:textAllCaps="false"
+            android:text="@string/strFoodPostres"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/blancorecuadro"/>
+
+    </LinearLayout>
+
+</ScrollView>

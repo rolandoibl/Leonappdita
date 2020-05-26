@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorText">
+
+        <!-- Fragmento de login UNAMigo -->
+
+        <TextView
+            android:id="@+id/uaTxvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/strUATitulo"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="50sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <ImageButton
+            android:id="@+id/uaImgbUA"
+            android:layout_width="211dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorText"
+            android:scaleType="fitXY"
+            android:src="@drawable/imgua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uaTxvTitulo" />
+
+
+        <EditText
+            android:id="@+id/edtCorreoUA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/strCorreo"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryText"
+            android:textColorHint="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uaImgbUA" />
+
+
+        <EditText
+            android:id="@+id/edtPasswordUA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/strContraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimaryText"
+            android:textColorHint="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtCorreoUA" />
+
+        <Button
+            android:id="@+id/btnIngresarUA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/strIngresar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/edtPasswordUA"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <Button
+            android:id="@+id/btnRegistrarUA"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorLightPrimary"
+            android:text="@string/strRegistrar"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnIngresarUA" />
+
+        <TextView
+            android:id="@+id/uaTxvDescripcion"
+            android:layout_width="250dp"
+            android:layout_height="102dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/strUALeyenda"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnRegistrarUA" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

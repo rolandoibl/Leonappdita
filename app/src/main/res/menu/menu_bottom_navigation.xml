@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_nav_inicio"
+        android:title="@string/strNavmenuInicio"
+        android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/menu_nav_cultura"
+        android:title="@string/strNavmenuCultura"
+        android:icon="@drawable/ic_visibility"/>
+    <item android:id="@+id/menu_nav_servicios"
+        android:title="@string/strNavmenuServicios"
+        android:icon="@drawable/ic_action_attachment_2"/>
+    <item android:id="@+id/menu_nav_comida"
+        android:title="@string/strNavmenuComida"
+        android:icon="@drawable/ic_restaurant"/>
+    <item android:id="@+id/menu_nav_unamigo"
+        android:title="@string/strNavmenuUnamigo"
+        android:icon="@drawable/ic_action_emo_laugh"/>
+
+</menu>

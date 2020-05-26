@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorText">
+
+        <!-- Fragmento de inicio, noticias principales -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inicioStringTxtvEnterate"
+            android:textSize="30sp"
+            android:id="@+id/inicioTxtvEnterate"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iniciobanner"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/inicioImgbtnBanner1"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iniciobanner"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/inicioImgbtnBanner2"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcvFragInicioLibros"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inicioImgbtnBanner2"/>
+
+    </LinearLayout>
+
+</ScrollView>

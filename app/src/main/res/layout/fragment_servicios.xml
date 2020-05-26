@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorText">
+
+        <!-- Fragmento de servicios estudiantiles -->
+
+        <TextView
+            android:id="@+id/txtVtituloServicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryText"
+            android:text="@string/strNavmenuServicios"
+            android:textSize="40sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtVinfoServicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textColor="@color/colorSecondaryText"
+            android:text="@string/strServiciosInfo"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/txtVtituloServicios"
+            />
+
+        <Button
+            android:id="@+id/btnServiciosMovEst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/strServiciosMovEst"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/colorText"
+            app:layout_constraintTop_toBottomOf="@+id/txtVinfoServicios"
+            />
+
+        <Button
+            android:id="@+id/btnServiciosCOPADI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/strServiciosCOPADI"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/colorText"
+            app:layout_constraintTop_toBottomOf="@+id/btnServiciosMovEst"
+            />
+
+        <Button
+            android:id="@+id/btnServiciosGuiaEsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/strServiciosGuiaEsc"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/colorText"
+            app:layout_constraintTop_toBottomOf="@+id/btnServiciosCOPADI"
+            />
+
+        <Button
+            android:id="@+id/btnServiciosASDRI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/strServiciosASDRI"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            app:layout_constraintTop_toBottomOf="@id/btnServiciosGuiaEsc"
+            />
+
+        <Button
+            android:id="@+id/btnServiciosServEsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/strServiciosServEsc"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/colorText"
+            app:layout_constraintTop_toBottomOf="@id/btnServiciosASDRI"
+            />
+    </LinearLayout>
+
+</ScrollView>

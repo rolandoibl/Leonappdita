@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Principal, aquí insertamos el bottomnavview -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fragContentMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btmNavPrincipal"
+        android:background="@color/colorText"
+        android:layout_alignParentTop="true"
+        />
+
+    <!-- Insertando el bottom navigation en la actividad main -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btmNavPrincipal"
+        app:menu="@menu/menu_bottom_navigation"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="@color/colorText"
+        app:itemIconTint="@color/colorText"
+        />
+
+</RelativeLayout>

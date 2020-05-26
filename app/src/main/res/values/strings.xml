@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name" translatable="false">Leonappdita</string>
+    <string name="strNavmenuInicio">Inicio</string>
+    <string name="strNavmenuCultura">Cultura</string>
+    <string name="strNavmenuServicios">Servicios</string>
+    <string name="strNavmenuComida">Comida</string>
+    <string name="strNavmenuUnamigo">UNAMigo</string>
+    <string name="inicioStringTxtvEnterate">Entérate de lo nuevo</string>
+    <string name="strFoodTitulo">¿Hambre?</string>
+    <string name="strFoodDesayuno">Desayuno</string>
+    <string name="strFoodComida">Comida</string>
+    <string name="strFoodDulces">Dulces</string>
+    <string name="strFoodPostres">Postres</string>
+    <string name="strFoodSubtitulo">No te preocupes, esta es la solución, aquí podrás saber como contactar vendedores de la facultad</string>
+    <string name="strDesayunoTituloJugo">Jugos</string>
+    <string name="strServiciosInfo">Pasos a seguir e información sobre trámites escolares</string>
+    <string name="strServiciosMovEst">Movilidad estudiantil</string>
+    <string name="strServiciosCOPADI" translatable="false">COPADI</string>
+    <string name="strServiciosGuiaEsc">Guía Escolar 2020-2</string>
+    <string name="strServiciosASDRI" translatable="false">ASDRI</string>
+    <string name="strServiciosServEsc">Servicios Escolares</string>
+    <string name="strMovEstTexto">Se entiende por movilidad estudiantil las estancias que realizan alumnos de licenciatura de la Facultad, en otras instituciones de educación superior de prestigio, nacionales y extranjeras, con objeto de ampliar su visión en el campo de la ingeniería y contribuir a su formación integral.</string>
+    <string name="strMovEstEntrante">Movilidad entrante</string>
+    <string name="strMovEstSaliente">Movilidad saliente</string>
+    <string name="strMovEstInterior">Interior de la UNAM</string>
+    <string name="strCOPADITutoria">Tutoría</string>
+    <string name="strCOPADIPARA" translatable="false">PARA</string>
+    <string name="strCOPADIBecas">Becas</string>
+    <string name="strCOPADIAsesorias">Asesorías</string>
+    <string name="strASDRICalendario">Calendario</string>
+    <string name="strASDRIInfo">Los extraordinarios ASDRI se contabilizarán en el tercer periodo de extraordinarios, para lo relativo a los límites de exámenes extraordinarios en un mismo periodo y al semestre.</string>
+    <string name="strServEscHorario">Horario de Servicios Escolares</string>
+    <string name="strServEscHoras">9:00 - 14:00, 15:00 - 19:30, Lun-Vie</string>
+    <string name="strServEscConstancias">Constancias</string>
+    <string name="strServEscTramites">Trámites</string>
+    <string name="strServEscTiempos">Tiempos de entrega</string>
+    <string name="strServEscID">Medios de identificación</string>
+    <string name="strServEscRevision">Revisión de estudios</string>
+    <string name="strServEscInconcl">Estudios inconclusos</string>
+    <string name="strTituloCultura">Entérate de los eventos culturales y comunicados de la FI</string>
+    <string name="strUATitulo">UNAMigo</string>
+    <string name="strNombreUsuario">Nombre de Usuario</string>
+    <string name="strContraseña">Contraseña</string>
+    <string name="strIngresar">Ingresar</string>
+    <string name="strRegistrar">Regístrate</string>
+    <string name="strUALeyenda">Si ya es de noche y no quieres regresarte solo al Metro, regístrate y consigue compañía para el camino, e incluso... ¡Haz nuevos amigos!</string>
+    <string name="strNombre">Nombre del solicitante</string>
+    <string name="strNuevacontra">Nueva contraseña</string>
+    <string name="strEsNecesario">Es necesario que subas una foto de la vista frontal de tu credencial escolar para validar tus datos, una vez validados se eliminará esta foto.</string>
+    <string name="strElegirFoto">Elegir foto</string>
+    <string name="strRegistrarse">Registrarse</string>
+    <string name="strCorreo">Correo electrónico</string>
+    <string name="strCarrera">Carrera</string>
+    <string name="strNumero">Número de cuenta</string>
+    <string name="strVuelveIngresarCorreo">Vuelve a ingresar tu correo</string>
+
+</resources>
