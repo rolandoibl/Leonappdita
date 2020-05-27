@@ -16,12 +16,42 @@
         android:textSize="30sp"
         android:gravity="center"/>
 
-        <ImageButton
+        <ImageView
             android:id="@+id/desayunoImgbtnProducto"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="fitXY"
             android:src="@drawable/desayuno_hot_cakes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Proveedor"
+            android:id="@+id/desayunoTxtvProveedor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Contacto:"
+            android:id="@+id/desayunoTxtvContacto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Descripcion"
+            android:id="@+id/desayunoTxtvDescripcion"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:id="@+id/desayunoTxtvPrecio"
+            android:text="$20"/>
+
+
 
        
 

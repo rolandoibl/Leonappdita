@@ -28,9 +28,6 @@ public class DesayunoFragment extends Fragment {
     FirebaseFirestore mFirestore;
     FirestoreRecyclerOptions<MuestraProducto> firestoreRecyclerOptions;
     AdaptadorMuestraProducto adaptador;
-    String imagen;
-    String titulo;
-
 
     @Nullable
     @Override
