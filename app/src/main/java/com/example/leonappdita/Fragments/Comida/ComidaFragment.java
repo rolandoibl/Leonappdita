@@ -46,19 +46,22 @@ public class ComidaFragment extends Fragment {
         foodBtnComida.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Por el COVID-19, no hay comida",Toast.LENGTH_SHORT).show();
+                fragmentSeleccionado = new LunchFragment();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragContentMain,fragmentSeleccionado).commit();
             }
         });
         foodBtnDulces.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"No hay vendedores de dulces por el momento",Toast.LENGTH_SHORT).show();
+                fragmentSeleccionado = new DulcesFragment();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragContentMain,fragmentSeleccionado).commit();
             }
         });
         foodBtnPostres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Hay desabasto de postres :(",Toast.LENGTH_SHORT).show();
+                fragmentSeleccionado = new PostresFragment();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragContentMain,fragmentSeleccionado).commit();
             }
         });
 
