@@ -1,7 +1,10 @@
 package com.example.leonappdita.RecyclerView;
 
 import android.app.Activity;
+import android.app.DownloadManager;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,12 +62,17 @@ public class AdaptadorMuestraLibro extends FirestoreRecyclerAdapter<MuestraLibro
     @Override
     protected void onBindViewHolder(@NonNull MuestraLibroViewHolder holder, int position, @NonNull MuestraLibro libro) {
         //Para imágenes de firestore
-        //Glide.with((Activity)activity).load(libro.getImagen()).into(holder.imgBtnCVLibro);
         Glide.with(activityt).load(libro.getImagen()).into(holder.imgBtnCVLibro);
+        final String url = libro.getLink();
         holder.imgBtnCVLibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(v.getContext(),"Descargando archivo...",Toast.LENGTH_SHORT).show();
+                Uri uri = Uri.parse(url);
+                //Se crea un intent implicito para visualizar los links en un navegador
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                //Se inicia la actividad del navegador
+                activityt.startActivity(intent);
             }
         });
     }

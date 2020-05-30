@@ -1,6 +1,7 @@
 package com.example.leonappdita.Fragments.Inicio;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -41,7 +42,7 @@ public class InicioFragment extends Fragment {
     FirestoreRecyclerOptions<MuestraLibro> firestoreRecyclerOptions;
     AdaptadorMuestraLibro adaptador;
     String imagen;
-    String link;
+    String[] link = new String[2];
 
     @Nullable
     @Override
@@ -64,7 +65,25 @@ public class InicioFragment extends Fragment {
         ConsultarBanners();
         //InicializarLibros();
         InicializarAdaptador();
+        inicioImgBtnBanner1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse(link[0]);
+                //Se crea un intent implicito para visualizar los links en un navegador
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                //Se inicia la actividad del navegador
+                startActivity(intent);
+            }
+        });
 
+        inicioImgBtnBanner2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse(link[1]);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+            }
+        });
         return v;
     }
 
@@ -75,7 +94,7 @@ public class InicioFragment extends Fragment {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                     imagen = documentSnapshot.getString("imagen");
-                    link = documentSnapshot.getString("link");
+                    link[0] = documentSnapshot.getString("link");
                     try {
                         Glide.with(getActivity()).load(imagen).into(inicioImgBtnBanner1);
                     }catch (Exception e){
@@ -88,7 +107,7 @@ public class InicioFragment extends Fragment {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                     imagen = documentSnapshot.getString("imagen");
-                    link = documentSnapshot.getString("link");
+                    link[1] = documentSnapshot.getString("link");
                     try {
                         Glide.with(getActivity()).load(imagen).into(inicioImgBtnBanner2);
                     }catch (Exception e){
