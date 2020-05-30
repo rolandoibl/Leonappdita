@@ -2,6 +2,8 @@ package com.example.leonappdita.RecyclerView;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,12 +43,18 @@ public class AdaptadorCultura extends FirestoreRecyclerAdapter<CulturaModelo,Ada
 
     @Override
     protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull CulturaModelo bannerCultura) {
+        final String url = bannerCultura.getLink();
         holder.titulo.setText(bannerCultura.getTitulo());
         Glide.with(activityt).load(bannerCultura.getImagen()).into(holder.fotoCultura);
         holder.fotoCultura.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(),"Se abre la información",Toast.LENGTH_SHORT).show();
+                //Se crea un uri con el url del RCV
+                Uri uri = Uri.parse(url);
+                //Se crea un intent implicito para visualizar los links en un navegador
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                //Se inicia la actividad del navegador
+                activityt.startActivity(intent);
             }
         });
     }
@@ -54,7 +62,6 @@ public class AdaptadorCultura extends FirestoreRecyclerAdapter<CulturaModelo,Ada
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView titulo;
         ImageView fotoCultura;
-        private TextView link;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
