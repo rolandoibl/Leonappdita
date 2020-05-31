@@ -67,7 +67,7 @@ public class AdaptadorMuestraLibro extends FirestoreRecyclerAdapter<MuestraLibro
         holder.imgBtnCVLibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(),"Descargando archivo...",Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(),"Ingresando a contenido...",Toast.LENGTH_SHORT).show();
                 Uri uri = Uri.parse(url);
                 //Se crea un intent implicito para visualizar los links en un navegador
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
