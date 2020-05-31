@@ -60,6 +60,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "571606760918-0lnod7o9vefrfvd03objmpruf43rfqh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leonappditaupdate",
+            "certificate_hash": "bf69b73c332ee58a126929cfd1cfcafaf1d28df0"
+          }
+        },
+        {
           "client_id": "571606760918-i6ikbu1pd6am4i97nqmlv2ofr7j1gah3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -1,5 +1,6 @@
 package com.example.leonappdita.Fragments.Unamigo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,10 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.leonappdita.Fragments.Unamigo.MapaFragment;
+import com.example.leonappdita.MapsActivity;
 import com.example.leonappdita.R;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -62,8 +62,8 @@ public class UnamigoFragment extends Fragment {
                                 }
                             }
                             else{
-                                fragmentSeleccionado = new MapaFragment();
-                                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragContentMain,fragmentSeleccionado).commit();
+                                Intent intent = new Intent(getContext(), MapsActivity.class);
+                                startActivity(intent);
                             }
                         }
                     });

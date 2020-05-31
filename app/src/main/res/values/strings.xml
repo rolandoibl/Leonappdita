@@ -54,5 +54,6 @@
     <string name="strNumero">Número de cuenta</string>
     <string name="strVuelveIngresarCorreo">Vuelve a ingresar tu correo</string>
     <string name="txvTituloConstancias">Constancias</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
